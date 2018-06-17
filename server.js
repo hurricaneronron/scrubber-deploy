@@ -6,15 +6,6 @@ const bodyparser = require('body-parser')
 const mongoose = require('mongoose')
 
 mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/scrubberDB')
-// mongoose.connect('mongodb://localhost/scrubberDB')
-// mongoose.connect('mongodb://MONGODB_URI')
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://local";
-// mongoose.Promise = Promise;
-// mongoose.connect(MONGODB_URI);
-
-// var MONGODB_URI = process.env.MONGODB_URI
-// mongoose.Promise = Promise
-// mongoose.connect(MONGODB_URI)
 
 // Middleware
 app.use(bodyparser.urlencoded({extended: true}))
