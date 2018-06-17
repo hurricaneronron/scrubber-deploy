@@ -41,7 +41,7 @@ Router.delete('/articles/:id', function(req, res) {
     })
 })
 
-Router.use('/', function(req, res) {
+Router.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"))
 })
 
